@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Compile the Python file
+python3 -m py_compile "$PYFILE"
+
+# Get the compiled .pyc file path
+PYCOMPILED="__pycache__/$(basename "$PYFILE" .py).cpython-$(python3 -c 'import sys; print(sys.version_info.major, sys.version_info.minor, sep="")').pyc"
+
+# Rename the compiled file to $PYFILEc
+OUTPUT_FILE="${PYFILE}c"
+mv "$PYCOMPILED" "$OUTPUT_FILE"
