@@ -15,7 +15,7 @@ if __name__ == "__main__":
     except ValueError:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
-   
+
     operator = sys.argv[2]
     if operator == '+':
         print("{} {} {} = {}".format(a, operator, b, add(a, b)))
