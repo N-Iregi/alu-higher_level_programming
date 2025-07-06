@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-# fetches https://alu-intranet.hbtn.io/status using urllib
+"""
+This module fetches the status of a specific URL using urllib
+and prints out the type and content of the response in a formatted way.
+"""
 
 import urllib.request
 
