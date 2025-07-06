@@ -13,4 +13,6 @@ if __name__ == "__main__":
     print("Body response:")
     print("\t- type:", type(fetch_page))
     print("\t- content:", fetch_page)
+
+    if 
     print("\t- utf8 content:", fetch_page.decode('utf-8'))
