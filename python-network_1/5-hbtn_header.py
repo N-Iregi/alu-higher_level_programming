@@ -8,8 +8,8 @@ import sys
 
 
 if __name__ == "__main__":
-    try:
-        r = requests.get(sys.argv[1])
-        print(r.headers['X-Request-Id'])
-    except:
-        pass
+    url = sys.argv[1]
+
+    r = requests.get(url)
+    value = r.headers.get('X-Request-Id')
+    print(value)    
